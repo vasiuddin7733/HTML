@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .slidecontainer {
+        width: 100%;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #04AA6D;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #04AA6D;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div style="display: flex-column; text-align: center; justify-items: center;">
+        <h2>Port</h2>
+        <h2>80</h2>
+        <h3>Hostname</h3>
+        <input type="text" id="fname" name="fname" value="hex2048-lambda.octa.wtf"></input>
+        <label>Radius
+            <script>
+                { }
+            </script>
+        </label>
+        <div class="slidecontainer">
+            <p>Default range slider:</p>
+            <input type="range" min="1" max="5" value="50">
+        </div>
+    </div>
+    <!-- <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form> -->
+
+    <!-- <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> -->
+</body>
+
+</html>
