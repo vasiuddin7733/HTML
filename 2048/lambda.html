@@ -21,13 +21,17 @@
 
     <table style="width:100%">
         <tr>
-            <td id="demo"></td>
-            <script>
-                document.getElementById("demo").innerHTML = "()=><div>vasiuddin</div>";
-            </script>
+            <td id="demo1">column1</td>
+            <td id="demo2">column2</td>
+            <td id="demo3">column3</td>
         </tr>
     </table>
-
+    <script>
+        document.getElementById("demo1").innerHTML = "vasiuddin1";
+        document.getElementById("demo2").innerHTML = "vasiuddin2";
+    </script>
+    <button type="button" onclick="document.getElementById('demo3').innerHTML = Date()">
+        Click me to display Date and Time.</button>
 </body>
 
 </html>
